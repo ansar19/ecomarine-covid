@@ -60,7 +60,7 @@
       <div class="container mx-auto flex flex-col items-center mt-24 mb-24 md:mb-32">
         <h1 class="text-2xl md:text-4xl leading-tight">Мифы и ложные представления</h1>
 
-        <div class="w-5/6 md:w-3/4 mt-3">
+        <div class="w-11/12 md:w-3/4 mt-3">
           <Myth />
         </div>
 

@@ -85,9 +85,6 @@
   </div>
 </template>
 
-<script>
-</script>
-
 <style>
 :root {
   --dark: #444;
@@ -121,10 +118,10 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-flow: dense;
   grid-gap: 2rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .box {
