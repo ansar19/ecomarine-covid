@@ -21,6 +21,13 @@
       <div class="hidden lg:block lg:inline-flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow">
           <a
+            href="#covid-calc"
+            v-smooth-scroll="{ duration: 1000 }"
+            class="block mt-4 lg:inline-block lg:mt-0 cursor-pointer text-black hover-link mr-5"
+          >
+            Калькулятор
+          </a>
+          <a
             href="#map"
             v-smooth-scroll="{ duration: 1000 }"
             class="block mt-4 lg:inline-block lg:mt-0 cursor-pointer text-black hover-link mr-5"

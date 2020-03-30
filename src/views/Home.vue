@@ -30,6 +30,17 @@
         </div>
       </div>
     </div>
+
+    <div id="covid-calc" class="flex">
+      <div class="container mx-auto flex flex-col items-center mt-24 mb-24">
+        <h1
+          class="mt-16 text-center text-3xl md:text-4xl lg:text-5xl"
+          v-scroll-reveal="{ delay: 500, distance: '15%' }"
+        >Калькулятор COVID-19 по Казахстану:</h1>
+        <CovidCalc />
+      </div>
+    </div>
+
     <div id="map" class="flex">
       <div class="container mx-auto flex flex-col items-center mt-24 mb-24">
         <h1
@@ -74,6 +85,7 @@
 <script>
 import Header from "@/components/Header.vue";
 import CovidStat from "@/components/CovidStat.vue";
+import CovidCalc from "@/components/CovidCalc.vue"
 import WikiInfo from "@/components/WikiInfo.vue";
 import Precaution from "@/components/Precaution.vue";
 import Myth from "@/components/Myth.vue";
@@ -84,6 +96,7 @@ export default {
   components: {
     Header,
     CovidStat,
+    CovidCalc,
     WikiInfo,
     Precaution,
     Myth,
