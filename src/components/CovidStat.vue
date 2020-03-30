@@ -1,8 +1,8 @@
 <template>
   <div class="container mx-4 ">
-    <h1 class="mb-8 ml-4">Данные по COVID-19 в Казахстане на: {{ lastUpdate | human_readable }}</h1>
+    <h1 class="mb-8 ml-4">Данные по COVID-19 в Казахстане на: <br>{{ lastUpdate | human_readable }}</h1>
     <table
-      class="w-full ml-2 flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5"
+      class="w-full ml-4 mr-2 flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5"
     >
       <thead class="text-grey">
         <tr
@@ -39,7 +39,7 @@
       </tbody>
     </table>
     <p
-            class="text-gray-600 text-xs italic">Источник: 
+            class="text-gray-600 ml-4 mr-2 text-xs italic">Источник: 
             <a
                 class="link open-sans-regular text-grey-darker hover-link"
                 href="https://systems.jhu.edu/research/public-health/ncov/"

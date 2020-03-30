@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <div
+      class="mt-4 mx-4 text-base lg:text-lg open-sans-regular leading-snug"
+    >Для того чтобы оценить масштабы пандемии, ниже представлен калькулятор по расчету: потенциальных заболевших, необходимости койко-мест, аппаратов искуственной вентиляции легких и летальности.</div>
+
     <div class="сontainer mx-auto py-6 px-4">
       <form>
         <div class="w-4/5 mx-auto mt-4">
@@ -78,7 +82,16 @@
               >Данные из Южной Кореи, где правительство предприняло широко распространенные меры скрининга и инфекционного контроля, показывают, что смертность приближается к 0.8%.</p>
               <p
                 class="text-orange-600 text-xs"
-              >В настоящее время КОВИД-19 имеет тенденцию роста в мире на уровне 4.5%.</p>
+              >В настоящее время летальность от 
+              
+              <a
+                  class="link open-sans-regular text-grey-darker hover-link"
+                  href="https://www.who.int/dg/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---3-march-2020"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >COVID-19 находится на уровне 3.4%</a>
+              
+              .</p>
             </div>
           </div>
         </div>
@@ -104,7 +117,7 @@
           </div>
 
           <div
-            class="shadow-lg  flex flex-col justify-center px-4 py-4 mt-2 mx-2 bg-white border border-gray-300 rounded sm:mt-0"
+            class="shadow-lg flex flex-col justify-center px-4 py-4 mt-2 mx-2 bg-white border border-gray-300 rounded sm:mt-0"
           >
             <div>
               <p class="text-2xl font-semibold text-center text-gray-800">{{hospitalization}}</p>
@@ -154,7 +167,7 @@ export default {
         {
           ageGroup: "Все возрастные группы",
           populationValue: 18395567,
-          mortalityRate: 4.5
+          mortalityRate: 3.4
         },
         { ageGroup: "0-9 лет", populationValue: 3784254, mortalityRate: 0.01 },
         {
