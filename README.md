@@ -1,5 +1,5 @@
 # EcoMarine COVID Website
-Landing page for [EcoMarine COVID](https://poketto.cash)
+Landing page for [EcoMarine COVID](https://covid.ecomarine.kz)
 
 ## Deploy
 
