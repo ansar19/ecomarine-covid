@@ -28,11 +28,18 @@
             Калькулятор
           </a>
           <a
-            href="#map"
+            href="#chronology"
             v-smooth-scroll="{ duration: 1000 }"
             class="block mt-4 lg:inline-block lg:mt-0 cursor-pointer text-black hover-link mr-5"
           >
-            Карта
+            Хронология
+          </a>
+          <a
+            href="#body"
+            v-smooth-scroll="{ duration: 1000 }"
+            class="block mt-4 lg:inline-block lg:mt-0 cursor-pointer text-black hover-link mr-5"
+          >
+            Симптомы
           </a>
           <a
             href="#precaution"
