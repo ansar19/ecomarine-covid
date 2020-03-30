@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container mx-4 ">
     <h1 class="mb-8 ml-4">Данные по COVID-19 в Казахстане на: {{ lastUpdate | human_readable }}</h1>
     <table
-      class="w-full flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5"
+      class="w-full ml-2 flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5"
     >
       <thead class="text-grey">
         <tr
@@ -38,6 +38,15 @@
         </tr>
       </tbody>
     </table>
+    <p
+            class="text-gray-600 text-xs italic">Источник: 
+            <a
+                class="link open-sans-regular text-grey-darker hover-link"
+                href="https://systems.jhu.edu/research/public-health/ncov/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)</a>
+            </p>
   </div>
 </template>
 <script>

@@ -2,13 +2,13 @@
   <div class>
     <div class="info-box">
       <div class="page-wrapper">
-        <div class="box">
+        <div class="box shadow-lg">
           <div class="box__content">
             <img src="https://image.flaticon.com/icons/svg/2746/2746339.svg" alt="hand wash" />
             <p>Мойте руки с водой и мылом не менее 20 секунд или обрабатывайте руки спиртосодержащим антисептиком.</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box shadow-lg">
           <div class="box__content">
             <img
               src="https://image.flaticon.com/icons/svg/2599/2599547.svg"
@@ -17,37 +17,37 @@
             <p>Прикрывайте рот и нос платком или согнутым локтем при кашле или чихании.</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box shadow-lg">
           <div class="box__content">
             <img src="https://image.flaticon.com/icons/svg/655/655820.svg" alt="avoid travelling" />
             <p>Избегайте поездок, особенно если у вас жар или простуда.</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box shadow-lg">
           <div class="box__content">
             <img src="https://image.flaticon.com/icons/svg/709/709072.svg" alt="seek health" />
             <p>Если у вас жар, кашель и затрудненное дыхание, обратитесь за медицинской помощью.</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box shadow-lg">
           <div class="box__content">
             <img src="https://image.flaticon.com/icons/svg/2599/2599564.svg" alt="medical mask" />
             <p>Если вы кашляете и чихаете, носите маску и обязательно узнайте, как ее использовать, дезинфицировать и утилизировать.</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box shadow-lg">
           <div class="box__content">
             <img src="https://image.flaticon.com/icons/svg/2746/2746334.svg" alt="keep distance" />
             <p>Держитесь от людей на расстоянии как минимум 1 метра, особенно если у них кашель, насморк и повышенная температура.</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box shadow-lg">
           <div class="box__content">
             <img src="https://image.flaticon.com/icons/svg/2746/2746337.svg" alt="stay at home" />
             <p>Оставайтесь дома и избегайте контактов.</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box shadow-lg">
           <div class="box__content">
             <img
               src="https://image.flaticon.com/icons/svg/2746/2746442.svg"
@@ -56,7 +56,7 @@
             <p>Руки касаются многих поверхностей, на которых может присутствовать вирус и передается также через слизистую, реже трогайте лицо и глаза.</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box shadow-lg">
           <div class="box__content">
             <img
               src="https://image.flaticon.com/icons/svg/2729/2729036.svg"
@@ -65,7 +65,7 @@
             <p>Займитесь самообразованием, тренировками или любимым хобби.</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box shadow-lg">
           <div class="box__content">
             <img
               src="https://image.flaticon.com/icons/svg/2729/2729078.svg"
@@ -74,7 +74,7 @@
             <p>Чаще проводите влажную уборку, мойте окна, помните солнечные лучи убивают микробов.</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box shadow-lg">
           <div class="box__content">
             <img src="https://image.flaticon.com/icons/svg/2746/2746327.svg" alt="no hand shake" />
             <p>Воздержитесь от рукопожатий, в знак приветствия машите рукой, делайте кивок или поклон.</p>

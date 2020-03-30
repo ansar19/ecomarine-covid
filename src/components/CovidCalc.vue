@@ -32,7 +32,11 @@
               v-model="selected"
               id="grid-state"
             >
-              <option v-for="(item, index) in items" :key="index" v-bind:value="item">группа: "{{ item.ageGroup }}"</option>
+              <option
+                v-for="(item, index) in items"
+                :key="index"
+                v-bind:value="item"
+              >группа: "{{ item.ageGroup }}"</option>
             </select>
           </div>
           <p
@@ -50,22 +54,23 @@
             <!-- card-content -->
             <div class="px-6 py-4">
               <h2 class="mb-2 text-gray-800">Справочная информация:</h2>
-              <p
-                class="text-orange-600 text-xs"
-              >Источник по смертности среди возрастных групп: <a
-                class="link open-sans-regular text-grey-darker hover-link"
-                href="https://www.medrxiv.org/content/10.1101/2020.03.04.20031104v1.full.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Adjusted age-specific case fatality ratio during the COVID-19 epidemic in Hubei, China, January and February 2020, medRxiv</a></p>
-              <p
-                class="text-orange-600 text-xs"
-              >Источник по численности среди возрастных групп Казахстана:               <a
-                class="link open-sans-regular text-grey-darker hover-link"
-                href="https://stat.gov.kz/edition/publication/collection"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Демографический ежегодник Казахстана</a>          
+              <p class="text-orange-600 text-xs">
+                Источник по смертности среди возрастных групп:
+                <a
+                  class="link open-sans-regular text-grey-darker hover-link"
+                  href="https://www.medrxiv.org/content/10.1101/2020.03.04.20031104v1.full.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Adjusted age-specific case fatality ratio during the COVID-19 epidemic in Hubei, China, January and February 2020, medRxiv</a>
+              </p>
+              <p class="text-orange-600 text-xs">
+                Источник по численности среди возрастных групп Казахстана:
+                <a
+                  class="link open-sans-regular text-grey-darker hover-link"
+                  href="https://stat.gov.kz/edition/publication/collection"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Демографический ежегодник Казахстана</a>
               </p>
               <p class="text-orange-600 text-xs">Смертность от гриппа составляет 0.1%.</p>
               <p
@@ -88,7 +93,7 @@
       <div class="w-4/5 mx-auto">
         <div class="flex flex-col sm:flex-row">
           <div
-            class="sm:w-1/4 p-2 flex flex-col justify-center px-4 py-4 mt-2 mx-2 bg-white border border-gray-300 rounded sm:mt-0"
+            class="shadow-lg sm:w-1/4 p-2 flex flex-col justify-center px-4 py-4 mt-2 mx-2 bg-white border border-gray-300 rounded sm:mt-0"
           >
             <div>
               <p class="text-2xl font-semibold text-center text-gray-800">{{infectedValue}}</p>
@@ -99,7 +104,7 @@
           </div>
 
           <div
-            class="flex flex-col justify-center px-4 py-4 mt-2 mx-2 bg-white border border-gray-300 rounded sm:mt-0"
+            class="shadow-lg  flex flex-col justify-center px-4 py-4 mt-2 mx-2 bg-white border border-gray-300 rounded sm:mt-0"
           >
             <div>
               <p class="text-2xl font-semibold text-center text-gray-800">{{hospitalization}}</p>
@@ -111,7 +116,7 @@
           </div>
 
           <div
-            class="flex flex-col justify-center px-4 py-4 mt-2 mx-2 bg-white border border-gray-300 rounded sm:mt-0"
+            class="shadow-lg flex flex-col justify-center px-4 py-4 mt-2 mx-2 bg-white border border-gray-300 rounded sm:mt-0"
           >
             <div>
               <p class="text-2xl font-semibold text-center text-gray-800">{{lungVentilator}}</p>
@@ -125,7 +130,7 @@
           </div>
 
           <div
-            class="flex flex-col justify-center px-4 py-4 mt-2 mx-2 bg-white border border-gray-300 rounded sm:mt-0"
+            class="shadow-lg flex flex-col justify-center px-4 py-4 mt-2 mx-2 bg-white border border-gray-300 rounded sm:mt-0"
           >
             <div>
               <p class="text-2xl font-semibold text-center text-gray-800">{{lethality}}</p>
