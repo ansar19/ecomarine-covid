@@ -8,10 +8,10 @@
             <div class="md:w-1/2 px-6 md:px-12 flex flex-col md:items-start">
               <h2
                 class="mt-8 text-xl lg:text-3xl max-w-md leading-tight"
-              >Первые случаи коронавирусной инфекции COVID-19 были зарегистрированы на территории Казахстана 13 марта 2020 года: два в Алма-Ате и один в Нур-Султане.</h2>
+              >Первые случаи коронавирусной инфекции COVID-19 были зарегистрированы на территории Казахстана 13 марта 2020 года: два в Алматы и один в Нур-Султане.</h2>
               <div
                 class="mt-4 text-base lg:text-lg max-w-md open-sans-regular leading-snug"
-              >15 марта президент Казахстана Касым-Жомарт Токаев подписал указ о введении в республике чрезвычайного положения на период с 8:00 16 марта 2020 года до 7:00 15 апреля 2020 года</div>
+              >15 марта президент Казахстана подписал указ о введении в республике чрезвычайного положения на период с 8:00 16 марта 2020 года до 7:00 15 апреля 2020 года</div>
               <transition appear name="fade">
                 <div class="inline-flex flex-row"></div>
               </transition>
@@ -33,10 +33,11 @@
 
     <div id="covid-calc" class="flex">
       <div class="container mx-auto flex flex-col items-center mt-24 mb-24">
+        <!--  mt-16 text-center text-3xl md:text-4xl lg:text-5xl-->
         <h1
-          class="mt-16 text-center text-3xl md:text-4xl lg:text-5xl"
+          class="text-2xl md:text-4xl text-center leading-tight"
           v-scroll-reveal="{ delay: 500, distance: '15%' }"
-        >Калькулятор COVID-19 по Казахстану:</h1>
+        >Калькулятор COVID-19 по Казахстану</h1>
         <CovidCalc />
       </div>
     </div>
@@ -44,7 +45,7 @@
     <div id="map" class="flex">
       <div class="container mx-auto flex flex-col items-center mt-24 mb-24">
         <h1
-          class="mt-16 text-center text-3xl md:text-4xl lg:text-5xl"
+          class="text-2xl md:text-4xl text-center leading-tight"
           v-scroll-reveal="{ delay: 500, distance: '15%' }"
         >Подтверждённые случаи по регионам Казахстана:</h1>
         <WikiInfo />

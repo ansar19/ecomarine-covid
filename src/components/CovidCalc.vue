@@ -52,11 +52,21 @@
               <h2 class="mb-2 text-gray-800">Справочная информация:</h2>
               <p
                 class="text-orange-600 text-xs"
-              >Источник по смертности среди возрастных групп: Adjusted age-specific case fatality ratio during the COVID-19 epidemic in Hubei, China, January and February 2020, medRxiv</p>
+              >Источник по смертности среди возрастных групп: <a
+                class="link open-sans-regular text-grey-darker hover-link"
+                href="https://www.medrxiv.org/content/10.1101/2020.03.04.20031104v1.full.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Adjusted age-specific case fatality ratio during the COVID-19 epidemic in Hubei, China, January and February 2020, medRxiv</a></p>
               <p
                 class="text-orange-600 text-xs"
-              >Источник по численности среди возрастных групп Казахстана: Демографический ежегодник Казахстана</p>
-              <!--         https://stat.gov.kz/edition/publication/collection -->
+              >Источник по численности среди возрастных групп Казахстана:               <a
+                class="link open-sans-regular text-grey-darker hover-link"
+                href="https://stat.gov.kz/edition/publication/collection"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Демографический ежегодник Казахстана</a>          
+              </p>
               <p class="text-orange-600 text-xs">Смертность от гриппа составляет 0.1%.</p>
               <p
                 class="text-orange-600 text-xs"
