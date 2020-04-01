@@ -11,7 +11,7 @@
             for="infection-rate"
           >Коэффициент инфицирования, %</label>
           <input
-            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            class="focus:underline appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             v-model.number="infectionRate"
             id="infection-rate"
             type="text"
@@ -25,23 +25,28 @@
         </div>
 
         <div class="w-4/5 mx-auto mt-4">
-          <svg
-            version="1.1"
-            id="Capa_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            width="20px"
-            height="20px"
-            viewBox="0 0 93.43 93.43"
-            style="enable-background:new 0 0 93.43 93.43;"
-            xml:space="preserve"
-          >
-            <g>
+          <div class="w-full">
+            <label
+              class="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+              for="grid-state"
+            >Выберите возрастную группу</label>
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="20px"
+              height="20px"
+              viewBox="0 0 93.43 93.43"
+              style="enable-background:new 0 0 93.43 93.43;"
+              xml:space="preserve"
+            >
               <g>
-                <path
-                  d="M38.764,93.43c1.814,0,3.484-0.597,4.844-1.597c0,0,3.304-2.55,3.304-5.32c0-1.598,0.029-14.684,0.045-22.063
+                <g>
+                  <path
+                    d="M38.764,93.43c1.814,0,3.484-0.597,4.844-1.597c0,0,3.304-2.55,3.304-5.32c0-1.598,0.029-14.684,0.045-22.063
 			c4.367,2.806,9.564,1.613,11.318,1.076c1.875-0.377,3.03-0.299,5.394-0.53c2.767-0.357,6.013-1.816,9.012-4.741
 			c0.608-0.438,1.675-0.674,2.804-0.919c3.043-0.66,7.64-1.661,8.926-8.506l0.022-0.163c0.05-0.559,1.196-13.787-1.604-21.409
 			c-1.045-2.85-1.988-4.479-2.745-5.79c-0.599-1.035-1.073-1.875-1.429-3.08c2.547-0.25,4.549-2.379,4.549-4.99V5.04
@@ -49,50 +54,59 @@
 			c-0.843,3.996-4.137,9.353-14.337,14.086c-0.981,0.346-8.092,3.059-8.093,9.105c0,0.155,0.039,3.813,3.327,5.738
 			c3.709,2.172,9.802,1.039,18.129-3.365c0.203,0.769,0.383,1.869,0.383,3.33v35.904C30.563,89.751,34.242,93.43,38.764,93.43z
 			 M31.783,14.839v-9.24h45.821v9.239L31.783,14.839L31.783,14.839z"
-                />
-                <circle cx="37.477" cy="10.226" r="3.266" />
+                  />
+                  <circle cx="37.477" cy="10.226" r="3.266" />
+                </g>
               </g>
-            </g>
-            <g />
-            <g />
-            <g />
-            <g />
-            <g />
-            <g />
-            <g />
-            <g />
-            <g />
-            <g />
-            <g />
-            <g />
-            <g />
-            <g />
-            <g />
-          </svg>
-          <label
-            class="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-state"
-          >Выберите возрастную группу</label>
-
-          <div class="relative">
-            <select
-              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              v-model="selected"
-              id="grid-state"
-            >
-              <option
-                v-for="(item, index) in items"
-                :key="index"
-                v-bind:value="item"
-              >группа: "{{ item.ageGroup }}"</option>
-            </select>
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+            </svg>
+            <div class="relative mt-1">
+              <select
+                v-model="selected"
+                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state"
+              >
+                <option
+                  v-for="(item, index) in items"
+                  :key="index"
+                  v-bind:value="item"
+                >группа: "{{ item.ageGroup }}"</option>
+              </select>
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+              >
+                <svg
+                  class="fill-current h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
 
           <div
-            class="bg-orange-100 border-t border-b border-blue-500 text-blue-700 mt-2 px-4 py-3"
+            class="background--alt border-t border-b border-blue-500 text-blue-700 mt-2 px-4 py-3"
             role="alert"
           >
-            <p class="font-bold">Выбранная возрастная группа: {{ selected.ageGroup }}</p>
+            <p class="text-sm">Выбранная возрастная группа: {{ selected.ageGroup }}</p>
             <p
               class="text-sm"
             >Численность населения в выбранной группе, человек: {{ selected.populationValue }}</p>
